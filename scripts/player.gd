@@ -1,7 +1,9 @@
 extends CharacterBody2D
 
 
-const SPEED = 80
+var SPEED = 80
+const walk=50
+const run=100
 var current_dir= "none"
 
 
@@ -9,6 +11,12 @@ func _physics_process(delta):
 	player_movement(delta)
 
 func player_movement(delta):
+	
+	if Input.is_action_pressed("run"):
+		SPEED=run
+	else:
+		SPEED=walk
+		
 	
 	if Input.is_action_pressed("ui_right"):
 		play_anim(1)
