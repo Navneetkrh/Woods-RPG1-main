@@ -447,3 +447,18 @@ script = SubResource("GDScript_vq238")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 4)
 shape = SubResource("CircleShape2D_6lp6x")
+<<<<<<< Updated upstream
+=======
+
+[node name="hitbox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hitbox"]
+position = Vector2(1, 9)
+shape = SubResource("CircleShape2D_qodci")
+
+[node name="Attack_Cool_Down" type="Timer" parent="."]
+
+[connection signal="body_entered" from="hitbox" to="." method="_on_hitbox_body_entered"]
+[connection signal="body_exited" from="hitbox" to="." method="_on_hitbox_body_exited"]
+[connection signal="timeout" from="Attack_Cool_Down" to="." method="_on_attack_cool_down_timeout"]
+>>>>>>> Stashed changes
