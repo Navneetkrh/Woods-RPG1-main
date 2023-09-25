@@ -172,6 +172,7 @@ func LoadAnimations():
 			animatedSprite.name = "no_name"
 		else:
 			animatedSprite.name = spriteSheet.Name
+		#if self.is_inside_tree():
 		animatedSprite.owner = get_tree().edited_scene_root
 		animatedSprite.play(AnimationsName[DefaultAnimation])
 

@@ -1,13 +1,13 @@
 [gd_scene load_steps=10 format=3 uid="uid://b2qhv2dpxd8nl"]
 
-[ext_resource type="Texture2D" uid="uid://bjikwpaipudjr" path="res://mystic_woods_free_2.1/sprites/tilesets/plains.png" id="1_7s307"]
-[ext_resource type="Texture2D" uid="uid://b6fprop6cwrtw" path="res://mystic_woods_free_2.1/sprites/objects/objects.png" id="1_ad4qe"]
-[ext_resource type="Texture2D" uid="uid://byhbo6cyyk1lu" path="res://mystic_woods_free_2.1/sprites/tilesets/grass.png" id="2_cto8u"]
-[ext_resource type="PackedScene" uid="uid://b086ccabwcnx4" path="res://scenes/nav.tscn" id="5_e3dac"]
+[ext_resource type="PackedScene" uid="uid://cwoqe6rse2btf" path="res://scenes/player.tscn" id="2_u6efg"]
 [ext_resource type="PackedScene" uid="uid://iof38omxg5rl" path="res://scenes/enemy.tscn" id="5_u4k5k"]
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_lgjte"]
+load_path = "res://.godot/imported/plains.png-ac06aecef887bfef09a4080b9e7a679d.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jtul2"]
-texture = ExtResource("1_7s307")
+texture = SubResource("CompressedTexture2D_lgjte")
 2:1/0 = 0
 2:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 2:1/0/physics_layer_0/angular_velocity = 0.0
@@ -93,14 +93,20 @@ texture = ExtResource("1_7s307")
 2:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 2:6/0/physics_layer_0/angular_velocity = 0.0
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_v1k8h"]
+load_path = "res://.godot/imported/grass.png-75f383031f227b61ba57c3d65b174f5e.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jx51r"]
-texture = ExtResource("2_cto8u")
+texture = SubResource("CompressedTexture2D_v1k8h")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_6xj62"]
+load_path = "res://.godot/imported/objects.png-f5b176923ca82c68fc9bc52370cfaf56.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vhce6"]
-texture = ExtResource("1_ad4qe")
+texture = SubResource("CompressedTexture2D_6xj62")
 0:5/size_in_atlas = Vector2i(3, 4)
 0:5/0 = 0
 0:5/0/y_sort_origin = 18
@@ -186,9 +192,9 @@ layer_2/tile_data = PackedInt32Array(393222, 65537, 4, 458758, 65537, 5, 524294,
 
 [node name="enemy" parent="." instance=ExtResource("5_u4k5k")]
 
-[node name="nav" parent="." instance=ExtResource("5_e3dac")]
+[node name="player" parent="." instance=ExtResource("2_u6efg")]
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Camera2D2" type="Camera2D" parent="player"]
 visible = false
-position = Vector2(174, 0)
+position = Vector2(174, -1)
 zoom = Vector2(4, 4)

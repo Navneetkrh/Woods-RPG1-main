@@ -1,47 +1,49 @@
 [gd_scene load_steps=63 format=3 uid="uid://cwoqe6rse2btf"]
 
-[ext_resource type="Texture2D" uid="uid://ea8vq1tt56he" path="res://mystic_woods_free_2.1/sprites/characters/player.png" id="1_8stb1"]
 [ext_resource type="Script" path="res://scripts/player.gd" id="2_0dk0a"]
 [ext_resource type="Texture2D" uid="uid://cyuhvw6e6rj4w" path="res://assets/Download6088.png" id="3_gtvbg"]
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4cl0n"]
+load_path = "res://.godot/imported/player.png-6996ee92719617215145dc25df4eeadf.ctex"
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_iepkc"]
-atlas = ExtResource("1_8stb1")
+atlas = SubResource("CompressedTexture2D_4cl0n")
 region = Rect2(0, 384, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_v3gm1"]
-atlas = ExtResource("1_8stb1")
+atlas = SubResource("CompressedTexture2D_4cl0n")
 region = Rect2(48, 384, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_voo6g"]
-atlas = ExtResource("1_8stb1")
+atlas = SubResource("CompressedTexture2D_4cl0n")
 region = Rect2(96, 384, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xqjr5"]
-atlas = ExtResource("1_8stb1")
+atlas = SubResource("CompressedTexture2D_4cl0n")
 region = Rect2(144, 384, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_463vr"]
-atlas = ExtResource("1_8stb1")
+atlas = SubResource("CompressedTexture2D_4cl0n")
 region = Rect2(0, 96, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_efgvx"]
-atlas = ExtResource("1_8stb1")
+atlas = SubResource("CompressedTexture2D_4cl0n")
 region = Rect2(48, 96, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_c33ip"]
-atlas = ExtResource("1_8stb1")
+atlas = SubResource("CompressedTexture2D_4cl0n")
 region = Rect2(96, 96, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mhejo"]
-atlas = ExtResource("1_8stb1")
+atlas = SubResource("CompressedTexture2D_4cl0n")
 region = Rect2(144, 96, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jcopa"]
-atlas = ExtResource("1_8stb1")
+atlas = SubResource("CompressedTexture2D_4cl0n")
 region = Rect2(192, 96, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_f35lk"]
-atlas = ExtResource("1_8stb1")
+atlas = SubResource("CompressedTexture2D_4cl0n")
 region = Rect2(240, 96, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_koqem"]
@@ -77,31 +79,31 @@ atlas = ExtResource("3_gtvbg")
 region = Rect2(512, 512, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2n3xj"]
-atlas = ExtResource("1_8stb1")
+atlas = SubResource("CompressedTexture2D_4cl0n")
 region = Rect2(0, 432, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ogxtx"]
-atlas = ExtResource("1_8stb1")
+atlas = SubResource("CompressedTexture2D_4cl0n")
 region = Rect2(48, 432, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_il1i6"]
-atlas = ExtResource("1_8stb1")
+atlas = SubResource("CompressedTexture2D_4cl0n")
 region = Rect2(96, 432, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yfrqs"]
-atlas = ExtResource("1_8stb1")
+atlas = SubResource("CompressedTexture2D_4cl0n")
 region = Rect2(0, 288, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_out2g"]
-atlas = ExtResource("1_8stb1")
+atlas = SubResource("CompressedTexture2D_4cl0n")
 region = Rect2(48, 288, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ennd0"]
-atlas = ExtResource("1_8stb1")
+atlas = SubResource("CompressedTexture2D_4cl0n")
 region = Rect2(96, 288, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_asi1k"]
-atlas = ExtResource("1_8stb1")
+atlas = SubResource("CompressedTexture2D_4cl0n")
 region = Rect2(144, 288, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0jnvw"]
@@ -153,43 +155,43 @@ atlas = ExtResource("3_gtvbg")
 region = Rect2(384, 128, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_15mv2"]
-atlas = ExtResource("1_8stb1")
+atlas = SubResource("CompressedTexture2D_4cl0n")
 region = Rect2(0, 336, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ra67s"]
-atlas = ExtResource("1_8stb1")
+atlas = SubResource("CompressedTexture2D_4cl0n")
 region = Rect2(48, 336, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_td6dm"]
-atlas = ExtResource("1_8stb1")
+atlas = SubResource("CompressedTexture2D_4cl0n")
 region = Rect2(96, 336, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vchj2"]
-atlas = ExtResource("1_8stb1")
+atlas = SubResource("CompressedTexture2D_4cl0n")
 region = Rect2(144, 336, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4746u"]
-atlas = ExtResource("1_8stb1")
+atlas = SubResource("CompressedTexture2D_4cl0n")
 region = Rect2(0, 48, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ff3s1"]
-atlas = ExtResource("1_8stb1")
+atlas = SubResource("CompressedTexture2D_4cl0n")
 region = Rect2(48, 48, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_t4ina"]
-atlas = ExtResource("1_8stb1")
+atlas = SubResource("CompressedTexture2D_4cl0n")
 region = Rect2(96, 48, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1scr0"]
-atlas = ExtResource("1_8stb1")
+atlas = SubResource("CompressedTexture2D_4cl0n")
 region = Rect2(144, 48, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0roqs"]
-atlas = ExtResource("1_8stb1")
+atlas = SubResource("CompressedTexture2D_4cl0n")
 region = Rect2(192, 48, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hxxuw"]
-atlas = ExtResource("1_8stb1")
+atlas = SubResource("CompressedTexture2D_4cl0n")
 region = Rect2(240, 48, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8eiu1"]
@@ -473,6 +475,7 @@ script = ExtResource("2_0dk0a")
 z_index = 1
 y_sort_enabled = true
 position = Vector2(0, 15)
+scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_bveqr")
 animation = &"idle"
 frame_progress = 0.267573
@@ -493,8 +496,8 @@ shape = SubResource("CircleShape2D_qodci")
 zoom = Vector2(4, 4)
 limit_left = 0
 limit_top = 0
-limit_right = 350
-limit_bottom = 236
+limit_right = 1000
+limit_bottom = 1000
 limit_smoothed = true
 rotation_smoothing_enabled = true
 
