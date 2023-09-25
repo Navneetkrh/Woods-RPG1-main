@@ -10,9 +10,8 @@ func _physics_process(delta):
 		#move_and_collide(Vector2(0,0))
 		move_and_slide()
 		$AnimatedSprite2D.play("Walk_right")
-		
-	
 		$AnimatedSprite2D.flip_h=(player.position.x - position.x)<0
+		
 		
 		
 	else:
@@ -28,3 +27,6 @@ func _on_detection_area_body_exited(body):
 	player = null
 	player_chase = false
 	
+	
+func enemy():
+	pass

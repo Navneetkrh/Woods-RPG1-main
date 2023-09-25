@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://80e5wftakg30"]
+
+[ext_resource type="PackedScene" uid="uid://cwoqe6rse2btf" path="res://scenes/player.tscn" id="1_khtid"]
+[ext_resource type="Script" path="res://laxme.gd" id="2_h87ym"]
+
+[node name="laxme" instance=ExtResource("1_khtid")]
+script = ExtResource("2_h87ym")

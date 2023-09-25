@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://bjikwpaipudjr" path="res://mystic_woods_free_2.1/sprites/tilesets/plains.png" id="1_7s307"]
 [ext_resource type="Texture2D" uid="uid://b6fprop6cwrtw" path="res://mystic_woods_free_2.1/sprites/objects/objects.png" id="1_ad4qe"]
 [ext_resource type="Texture2D" uid="uid://byhbo6cyyk1lu" path="res://mystic_woods_free_2.1/sprites/tilesets/grass.png" id="2_cto8u"]
-[ext_resource type="PackedScene" uid="uid://cwoqe6rse2btf" path="res://scenes/player.tscn" id="4_5odwb"]
+[ext_resource type="PackedScene" uid="uid://b086ccabwcnx4" path="res://scenes/nav.tscn" id="5_e3dac"]
 [ext_resource type="PackedScene" uid="uid://iof38omxg5rl" path="res://scenes/enemy.tscn" id="5_u4k5k"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jtul2"]
@@ -184,7 +184,11 @@ layer_2/y_sort_origin = 0
 layer_2/z_index = 2
 layer_2/tile_data = PackedInt32Array(393222, 65537, 4, 458758, 65537, 5, 524294, 65537, 6, 393223, 131073, 4, 458759, 131073, 5, 524295, 131073, 6, 393224, 131073, 4, 458760, 131073, 5, 524296, 131073, 6, 393225, 131073, 4, 458761, 131073, 5, 524297, 131073, 6, 393226, 196609, 4, 458762, 196609, 5, 524298, 196609, 6, 524286, 3, 1, 327682, 655363, 7, 327692, 655363, 7, 65534, 3, 0, 65538, 655363, 0, 393211, 3, 5, 393216, 524291, 6, 458755, 327683, 0, 196622, 3, 5, 327680, 3, 5, -131076, 524291, 6, -65538, 3, 1, -262145, 3, 5, -196606, 655363, 7, -65532, 3, 5, -131065, 524291, 6, -393207, 393219, 7, -131062, 393219, 7, -262132, 524291, 6, -131060, 3, 1, -393203, 655363, 7)
 
-[node name="player" parent="." instance=ExtResource("4_5odwb")]
-position = Vector2(8, 1)
-
 [node name="enemy" parent="." instance=ExtResource("5_u4k5k")]
+
+[node name="nav" parent="." instance=ExtResource("5_e3dac")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+visible = false
+position = Vector2(174, 0)
+zoom = Vector2(4, 4)

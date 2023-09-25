@@ -1,5 +1,5 @@
 extends CharacterBody2D
-class_name Player
+
 
 var enemy_in_attack_range = false
 var enemy_attack_cooldown = true

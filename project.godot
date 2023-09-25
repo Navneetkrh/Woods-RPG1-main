@@ -11,13 +11,13 @@ config_version=5
 [application]
 
 config/name="Woods-RPG"
-run/main_scene="res://scenes/player.tscn"
+run/main_scene="res://scenes/world.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://icon.svg"
 
-[display]
+[editor_plugins]
 
-window/stretch/scale=4.0
+enabled=PackedStringArray("res://addons/LPCAnimatedSprite/plugin.cfg")
 
 [input]
 
