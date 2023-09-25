@@ -1,4 +1,4 @@
-[gd_scene load_steps=63 format=3 uid="uid://cwoqe6rse2btf"]
+[gd_scene load_steps=53 format=3 uid="uid://cwoqe6rse2btf"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="2_0dk0a"]
 [ext_resource type="Texture2D" uid="uid://cyuhvw6e6rj4w" path="res://assets/Download6088.png" id="3_gtvbg"]
@@ -22,29 +22,9 @@ region = Rect2(96, 384, 48, 48)
 atlas = SubResource("CompressedTexture2D_4cl0n")
 region = Rect2(144, 384, 48, 48)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_463vr"]
-atlas = SubResource("CompressedTexture2D_4cl0n")
-region = Rect2(0, 96, 48, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_efgvx"]
-atlas = SubResource("CompressedTexture2D_4cl0n")
-region = Rect2(48, 96, 48, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_c33ip"]
-atlas = SubResource("CompressedTexture2D_4cl0n")
-region = Rect2(96, 96, 48, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_mhejo"]
-atlas = SubResource("CompressedTexture2D_4cl0n")
-region = Rect2(144, 96, 48, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_jcopa"]
-atlas = SubResource("CompressedTexture2D_4cl0n")
-region = Rect2(192, 96, 48, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_f35lk"]
-atlas = SubResource("CompressedTexture2D_4cl0n")
-region = Rect2(240, 96, 48, 48)
+[sub_resource type="AtlasTexture" id="AtlasTexture_wn5b2"]
+atlas = ExtResource("3_gtvbg")
+region = Rect2(0, 256, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_koqem"]
 atlas = ExtResource("3_gtvbg")
@@ -170,29 +150,9 @@ region = Rect2(96, 336, 48, 48)
 atlas = SubResource("CompressedTexture2D_4cl0n")
 region = Rect2(144, 336, 48, 48)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_4746u"]
-atlas = SubResource("CompressedTexture2D_4cl0n")
-region = Rect2(0, 48, 48, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ff3s1"]
-atlas = SubResource("CompressedTexture2D_4cl0n")
-region = Rect2(48, 48, 48, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_t4ina"]
-atlas = SubResource("CompressedTexture2D_4cl0n")
-region = Rect2(96, 48, 48, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_1scr0"]
-atlas = SubResource("CompressedTexture2D_4cl0n")
-region = Rect2(144, 48, 48, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_0roqs"]
-atlas = SubResource("CompressedTexture2D_4cl0n")
-region = Rect2(192, 48, 48, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_hxxuw"]
-atlas = SubResource("CompressedTexture2D_4cl0n")
-region = Rect2(240, 48, 48, 48)
+[sub_resource type="AtlasTexture" id="AtlasTexture_vxvnr"]
+atlas = ExtResource("3_gtvbg")
+region = Rect2(0, 448, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8eiu1"]
 atlas = ExtResource("3_gtvbg")
@@ -247,22 +207,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_463vr")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_efgvx")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_c33ip")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_mhejo")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_jcopa")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_f35lk")
+"texture": SubResource("AtlasTexture_wn5b2")
 }],
 "loop": true,
 "name": &"back_idle",
@@ -393,22 +338,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_4746u")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ff3s1")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_t4ina")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_1scr0")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_0roqs")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_hxxuw")
+"texture": SubResource("AtlasTexture_vxvnr")
 }],
 "loop": true,
 "name": &"side_idle",
@@ -477,8 +407,7 @@ y_sort_enabled = true
 position = Vector2(0, 15)
 scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_bveqr")
-animation = &"idle"
-frame_progress = 0.267573
+animation = &"side_idle"
 offset = Vector2(0, -15)
 script = SubResource("GDScript_vq238")
 

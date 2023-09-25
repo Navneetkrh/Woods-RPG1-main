@@ -26,7 +26,7 @@ script = ExtResource("1_aj5j6")
 [node name="LPCAnimatedSprite2D" type="Node2D" parent="."]
 z_index = 1
 script = ExtResource("2_cnj2d")
-SpriteSheets = Array[ExtResource("4_sgoj8")]([SubResource("Resource_sn43d")])
+SpriteSheets = [SubResource("Resource_sn43d")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 13)
